@@ -3,7 +3,20 @@ import {
   saveToLocalStorage,
   getFromLocalStorage,
 } from "../utils/localStorageHelper";
-import { countries } from "../data";
+// import { countries } from "../data";
+
+const countries = [
+  "United States",
+  "Canada",
+  "Australia",
+  "Germany",
+  "France",
+  "Japan",
+  "India",
+  "China",
+  "Brazil",
+  "South Africa",
+];
 
 const InputSelector: React.FC = () => {
   const savedSelectedItems = getFromLocalStorage("selectedItems") || [];
